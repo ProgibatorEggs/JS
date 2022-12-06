@@ -1,0 +1,338 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+@font-face {
+    font-family: 'Formular';
+    src: local('Formular Light'), local('Formular-Light'),
+        url('../font/Formular.woff2') format('woff2'),
+        url('../font/Formular.woff') format('woff'),
+        url('../font/Formular.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+.calc 
+{	
+	margin-top: 100px;
+}
+.calcForm
+{
+}
+.calcHead 
+{
+	border:1px rgb(165, 165, 165) solid;
+	display: flex;
+	background-color: white;
+	justify-content: center;
+	margin: 0px auto;
+	width: 470px;
+}
+.calcHeadImg 
+{
+	display:block;
+	
+}
+.calcHeadImgImg
+{
+	margin-top: 4px;
+	width: 30px;
+	height: 30px;
+}
+.calcHeadName 
+{
+	font-size: 30px;
+    text-align: center;
+    font-family: 'Formular';
+	display:block;
+	margin: 2px 70px 0px 20px;
+}
+.calcHeadButtons 
+{
+	display:flex;
+}
+.calcHeadButton1 
+{
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0px 20px 0px 20px;
+	padding-top: 7px;
+	background-color: white;
+}
+.calcHeadButton2 
+{
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0px 20px 0px 20px;
+	background-color: white;
+}
+.calcHeadButton3 
+{
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0px 0px 0px 20px;
+	padding-top: 4px;
+	background-color: white;
+}
+.calcViewForm
+{
+	display: flex;
+	background-color: black;
+	flex-direction: column;
+	width: 470px;
+	height: 700px;
+	margin: 0px auto;
+	
+}
+.calcView 
+{
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	width: 470px;
+	height: 150px;
+}
+.calcViewEnter 
+{
+	font-size: 30px;
+	padding: 20px;
+	color: grey;
+	font-family:  'Formular';
+	font-weight: bold;
+	
+}
+.calcViewResult 
+{
+	font-size: 45px;
+	padding: 20px;
+	color: white;
+	font-family:  'Formular';
+}
+
+.calcFormButtons
+{
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	background-color: black;
+	justify-content: space-around;
+	justify-items: center
+}
+.calcFormButtonClearAll 
+{
+	width: 70px;
+	height: 120px;
+	background-color: black;
+	color: white;
+	font-size: 40px;
+	font-family: 'Formular';
+}
+.calcFormButtonDeletelLastNum
+{
+	width: 70px;
+	height: 120px;
+	background-color: black;
+	color: white;
+	font-size: 40px;
+	font-family: 'Formular';
+}
+.calcFormButtonDeletelLastChildNum
+{
+	width: 70px;
+	height: 120px;
+	background-color: black;
+	color: white;
+	font-size: 40px;
+	font-family: 'Formular';
+}
+.calcFormButtonDeletelLastChildNumImg
+{
+	margin-top: 7px;
+	width: 50px;
+	height: 35px;
+}
+.calcFormButtonDivision 
+{
+	width: 70px;
+	height: 120px;
+	background-color: black;
+	color: white;
+	font-size: 40px;
+	font-family: 'Formular';
+}
+.calcFormButtonSeven
+{
+	width: 70px;
+	height: 120px;
+	background-color: black;
+	color: white;
+	font-size: 40px;
+	font-family: 'Formular';
+}
+.calcFormButtonEight 
+{
+	width: 70px;
+	height: 120px;
+	background-color: black;
+	color: white;
+	font-size: 40px;
+	font-family: 'Formular';
+}
+.calcFormButtonNine 
+{
+	width: 70px;
+	height: 120px;
+	background-color: black;
+	color: white;
+	font-size: 40px;
+	font-family: 'Formular';
+}
+.calcFormButtonMultiplay 
+{
+	width: 70px;
+	height: 120px;
+	background-color: black;
+	color: white;
+	font-size: 40px;
+	font-family: 'Formular';
+}
+.calcFormButtonFour 
+{
+	width: 70px;
+	height: 120px;
+	background-color: black;
+	color: white;
+	font-size: 40px;
+	font-family: 'Formular';
+}
+.calcFormButtonFive 
+{
+	width: 70px;
+	height: 120px;
+	background-color: black;
+	color: white;
+	font-size: 40px;
+	font-family: 'Formular';
+}
+.calcFormButtonSix 
+{
+	width: 70px;
+	height: 120px;
+	background-color: black;
+	color: white;
+	font-size: 40px;
+	font-family: 'Formular';
+}
+.calcFormButtonMinus 
+{
+	width: 70px;
+	height: 120px;
+	background-color: black;
+	color: white;
+	font-size: 40px;
+	font-family: 'Formular';
+}
+.calcFormButtonOne
+{
+	width: 70px;
+	height: 120px;
+	background-color: black;
+	color: white;
+	font-size: 40px;
+	font-family: 'Formular';
+}
+.calcFormButtonTwo 
+{
+	width: 70px;
+	height: 120px;
+	background-color: black;
+	color: white;
+	font-size: 40px;
+	font-family: 'Formular';
+}
+.calcFormButtonThree 
+{
+	width: 70px;
+	height: 120px;
+	background-color: black;
+	color: white;
+	font-size: 40px;
+	font-family: 'Formular';
+}
+.calcFormButtonPlus
+{
+	width: 70px;
+	height: 120px;
+	background-color: black;
+	color: white;
+	font-size: 40px;
+	font-family: 'Formular';
+}
+.calcFormButtonNegate
+{
+	width: 70px;
+	height: 120px;
+	background-color: black;
+	color: white;
+	font-size: 40px;
+	font-family: 'Formular';
+}
+.calcFormButtonZero 
+{
+	width: 70px;
+	height: 120px;
+	background-color: black;
+	color: white;
+	font-size: 40px;
+	font-family: 'Formular';
+}
+.calcFormButtonDot
+{
+	width: 70px;
+	height: 120px;
+	background-color: black;
+	color: white;
+	font-size: 40px;
+	font-family: 'Formular';
+}
+.calcFormButtonSum 
+{
+	width: 70px;
+	height: 120px;
+	background-color: black;
+	color: white;
+	font-size: 40px;
+	font-family: 'Formular';
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link  href="./css/style.css" rel="stylesheet">   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    добавляем сам фреймворк mocha
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script>
+      // включаем режим тестирования в стиле BDD
+      mocha.setup('bdd');
+    </script>
+     добавим chai 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+      // chai предоставляет большое количество функций. Объявим assert глобально
+      let assert = chai.assert;
+    </script> -->
+    </head>
+
+    <body>
+        <!-- <script>
+            function pow(x,n)
+            {
+                if(n < 0) return NaN;
+                if(Math.round(n) != n) return NaN;
+                
+                let result = 1;
+                for(let i = 0; i < n; i++)
+                {
+                    result *= x;
+                }
+                return result;
+            }
+        </script>
+        <script src="/js/test.js"></script>
+
+        <div id="mocha"></div>-->
+
+       <div class="calc">
+        <div class="calcForm">
+            <div class="calcHead">
+                    <div class="calcHeadImg">
+                        <img  class= "calcHeadImgImg" src="./img/HeadLogo.png" alt="">
+                    </div>
+                    <div class="calcHeadName"> 
+                        Calculator
+                    </div>
+                    <div class="calcHeadButtons">
+                           <button class="calcHeadButton1" >−</button>
+                            <button class="calcHeadButton2">□</button>
+                            <button class="calcHeadButton3">×</button>
+                    </div>
+            </div>
+        <div class="calcViewForm">
+            <div class="calcView">
+                <div class="calcViewEnter">0</div>
+                <div class="calcViewResult">0</div> 
+            </div>
+            <div class="calcFormButtons"> 
+                <button class="calcFormButtonClearAll">C</button>
+                <button class="calcFormButtonDeletelLastNum">CE</button>
+                <button class="calcFormButtonDeletelLastChildNum"> <img  class="calcFormButtonDeletelLastChildNumImg" src="./img/DeleteButton.png" alt=""> </button>
+                <button class="calcFormButtonDivision">/<br></button>
+                <button class="calcFormButtonSeven">7</button>
+                <button class="calcFormButtonEight">8</button>
+                <button class="calcFormButtonNine">9</button>
+                <button class="calcFormButtonMultiplay">×</button>
+                <button class="calcFormButtonFour">4</button>
+                <button class="calcFormButtonFive">5</button>
+                <button class="calcFormButtonSix">6</button>
+                <button class="calcFormButtonMinus">−</button>
+                <button class="calcFormButtonOne">1</button>
+                <button class="calcFormButtonTwo">2</button>
+                <button class="calcFormButtonThree">3</button>
+                <button class="calcFormButtonPlus">+</button>
+                <button class="calcFormButtonNegate">+/-</button>
+                <button class="calcFormButtonZero">0</button>
+                <button class="calcFormButtonDot">.</button>
+                <button class="calcFormButtonSum">=</button>  
+            </div>  
+        </div>  
+        
+        
+       </div>
+        <script src="js/script.js"></script>
+        <!-- <script>
+            mocha.run();
+          </script> -->
+    </body>
+</html>
