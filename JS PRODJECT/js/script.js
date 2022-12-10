@@ -18,15 +18,15 @@ function searchAnnagram(letter, annagram)
 
 function aclean(arr)
 {
-    let letter, annagram,clearedArray;
-    for(let i = 0; i<arr.length;i++)
+    for(let i = 0; i < arr.length;i++)
     {
         arr[i].toLowerCase();
-        for(let j = i + 1; j > i;i++)
+        for(let j = i + 1; j < arr.length;i++)
         {
+            arr[j].toLowerCase();
             if(searchAnnagram(arr[i],arr[j])) arr.splice(j,1); 
         }
-    }
+    } 
     alert(arr);
 }
 
