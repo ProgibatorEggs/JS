@@ -1,33 +1,37 @@
 "use strict"
-function searchAnnagram(letter, annagram)
+function searchAnnagram(mapLetter,arr)
 {
-    let coinsidence;
-    if(letter.length != annagram.length) return false;
-    else
+    let setLetter = new Set(mapLetter);
+    let rememberSizeSetLetter = setLetter.size;
+    for(let i = 0;i < arr.length;i++)
     {
-        for(let i = 0; i<arr.length;i++)
+        setLetter.add(arr[i]);
+        if(setLetter.size > rememberSizeSetLetter)
         {
-            for(let j = 0; j < annagram.length;i++)
-            { 
-               if(letter.substr(i,1) == annagram.substr(j,1)) coinsidence++;
-            }
-        }
-        if(coinsidence == letter.length) return true;
+            setLetter.clear();
+            return false;
+        } 
+        else return true;
     }
 }
 
 function aclean(arr)
 {
-    for(let i = 0; i < arr.length;i++)
+    let setLetter = new Map();
+    for(let i = 0;i < arr.length;i++)
     {
-        arr[i].toLowerCase();
-        for(let j = i + 1; j < arr.length;i++)
+        for(let j = 0;j < arr[i].length;j++)
         {
-            arr[j].toLowerCase();
-            if(searchAnnagram(arr[i],arr[j])) arr.splice(j,1); 
+            setLetter.add(arr[i][j].toLowerCase());
+          
         }
-    } 
-    alert(arr);
+        if(searchAnnagram(setLetter,arr[i + 1])) 
+        {
+            arr.splice(j,1);
+            j--;
+        }  
+    }
+    return arr;
 }
 
 let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
